@@ -1,1 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+:root {
+  --color-background-intro: hsl(217, 28%, 15%);
+  --color-background-cta: hsl(217, 28%, 15%);
+  --color-background-main: hsl(218, 28%, 13%);
+  --color-background-footer: hsl(216, 53%, 9%);
+  --color-background-testimonials: hsl(219, 30%, 18%);
+  --color-accent-cyan: hsl(176, 68%, 64%);
+  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-accent-light-red: hsl(0, 100%, 63%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+}
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-main);
+}
+
+/* Remove list styles on ul, ol */
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 87.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-neutral-white);
+}
+
+h1,
+h2,
+nav,
+input[type=submit] {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+nav,
+input[type=submit] {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+}
+
+nav {
+  font-size: 0.875rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.region {
+  width: 100%;
+}
+.region[data-region=intro] {
+  background-color: var(--color-background-intro);
+}
+
+.container {
+  width: 88.2667%;
+  margin-left: 5.0667%;
+  margin-right: 6.6666%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.7857rem;
+}
+
+nav {
+  opacity: 0.75;
+}
+nav ul {
+  display: flex;
+  column-gap: 1.7857rem;
+}
+
+.logo--header {
+  width: 5.71428rem;
+  height: auto;
+}
+
+.attribution {
+  display: none;
+}

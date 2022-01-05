@@ -1,0 +1,13 @@
+@use "../abstracts/variables.scss" as *;
+
+.region {
+  width: 100%;
+
+  &[data-region="intro"] { background-color: var(--color-background-intro); }
+}
+
+.container {
+  width: 88.2667%;
+  margin-left: 5.0667%;
+  margin-right: 6.6666%;
+}

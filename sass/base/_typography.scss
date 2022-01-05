@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+html {
+  font-size: 87.5%; // = 14px / 16px
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-neutral-white);
+}
+
+h1,
+h2,
+nav,
+input[type="submit"] {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+nav,
+input[type="submit"] {
+  font-weight: 400;
+}
+
+p { font-size: 1rem; }
+
+nav { font-size: 0.875rem; }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
