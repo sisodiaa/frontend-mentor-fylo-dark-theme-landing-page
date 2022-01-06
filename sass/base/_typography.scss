@@ -24,6 +24,8 @@ h2 {
   font-weight: 700;
 }
 
+h1 { font-size: 1.725rem; }
+
 nav,
 input[type="submit"] {
   font-weight: 400;
@@ -37,4 +39,20 @@ a:link,
 a:visited {
   text-decoration: none;
   color: currentColor;
+}
+
+.heading {
+  &--hero {
+    text-align: center;
+  }
+}
+
+.paragraph {
+  &--hero {
+    text-align: center;
+  }
+}
+
+.button {
+  &--hero { text-align: center; }
 }
