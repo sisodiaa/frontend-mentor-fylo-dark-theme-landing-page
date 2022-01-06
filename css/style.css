@@ -155,8 +155,14 @@ a:visited {
 .region {
   width: 100%;
 }
-.region[data-region=intro] {
+.region[data-region=header] {
   background-color: var(--color-background-intro);
+}
+.region[data-region=intro] {
+  background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, var(--color-background-intro), var(--color-background-intro) 59.5%, var(--color-background-main) 59.5%);
+  background-position: bottom 15.75rem center, 0px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 141px, cover;
 }
 
 .container {
@@ -169,7 +175,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3.375rem;
+  padding-bottom: 3.375rem;
   padding-top: 1.7857rem;
 }
 

@@ -3,7 +3,20 @@
 .region {
   width: 100%;
 
-  &[data-region="intro"] { background-color: var(--color-background-intro); }
+  &[data-region="header"] { background-color: var(--color-background-intro); }
+
+  &[data-region="intro"] {
+    background-image: url(../images/bg-curvy-mobile.svg),
+      linear-gradient(
+        to bottom,
+        var(--color-background-intro),
+        var(--color-background-intro) 59.5%,
+        var(--color-background-main) 59.5%
+      );
+    background-position: bottom 15.75rem center, 0px 0px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 141px, cover;
+  }
 }
 
 .container {
