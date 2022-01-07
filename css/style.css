@@ -144,6 +144,10 @@ a:visited {
   text-align: center;
 }
 
+.subheading--feature {
+  font-size: 1.25rem;
+}
+
 .paragraph--hero {
   text-align: center;
 }
@@ -152,13 +156,18 @@ a:visited {
   text-align: center;
 }
 
+.page__feature {
+  text-align: center;
+}
+
 .region {
   width: 100%;
 }
-.region[data-region=header] {
+
+#region-header {
   background-color: var(--color-background-intro);
 }
-.region[data-region=intro] {
+#region-intro {
   background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, var(--color-background-intro), var(--color-background-intro) 59.5%, var(--color-background-main) 59.5%);
   background-position: bottom 15.75rem center, 0px 0px;
   background-repeat: no-repeat, no-repeat;
@@ -198,10 +207,17 @@ nav ul {
   padding-right: 0.714285rem;
 }
 
+.subheading--feature {
+  margin-bottom: 0.5rem;
+}
+
 .paragraph--hero {
   margin-bottom: 2.15rem;
   padding-left: 1.5rem;
   padding-right: 1.014285rem;
+  opacity: 0.75;
+}
+.paragraph--feature {
   opacity: 0.75;
 }
 
@@ -221,6 +237,38 @@ nav ul {
   margin-bottom: 2.5rem;
   padding-left: 1.2rem;
   padding-right: 0.714285rem;
+}
+.page__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  margin-top: 9.5rem;
+  grid-row-gap: 6.75rem;
+}
+.page__feature {
+  width: 96%;
+  margin: 0 auto;
+}
+.page__feature:first-child {
+  margin-bottom: -0.5rem;
+}
+.page__icon {
+  margin: 0 auto;
+}
+.page__icon--access-anywhere {
+  height: 4.25rem;
+  margin-bottom: 2.25rem;
+}
+.page__icon--security {
+  height: 4.785rem;
+  margin-bottom: 1.95rem;
+}
+.page__icon--collaboration {
+  height: 3.9285rem;
+  margin-bottom: 2.5715rem;
+}
+.page__icon--any-file {
+  height: 3.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .attribution {

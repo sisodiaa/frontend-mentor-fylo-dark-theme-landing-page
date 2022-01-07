@@ -2,10 +2,12 @@
 
 .region {
   width: 100%;
+}
 
-  &[data-region="header"] { background-color: var(--color-background-intro); }
+#region {
+  &-header { background-color: var(--color-background-intro); }
 
-  &[data-region="intro"] {
+  &-intro {
     background-image: url(../images/bg-curvy-mobile.svg),
       linear-gradient(
         to bottom,

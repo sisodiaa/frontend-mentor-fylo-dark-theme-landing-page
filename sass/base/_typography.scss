@@ -42,17 +42,19 @@ a:visited {
 }
 
 .heading {
-  &--hero {
-    text-align: center;
-  }
+  &--hero { text-align: center; }
+}
+
+.subheading {
+  &--feature { font-size: 1.25rem; }
 }
 
 .paragraph {
-  &--hero {
-    text-align: center;
-  }
+  &--hero { text-align: center; }
 }
 
 .button {
   &--hero { text-align: center; }
 }
+
+.page__feature { text-align: center; }
