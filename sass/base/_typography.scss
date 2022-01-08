@@ -35,10 +35,18 @@ p { font-size: 1rem; }
 
 nav { font-size: 0.875rem; }
 
+a,
 a:link,
 a:visited {
   text-decoration: none;
   color: currentColor;
+
+  &.link--benefit {
+    font-size: 0.875rem;
+    color: var(--color-accent-cyan);
+
+    & span { opacity: 0.75; }
+  }
 }
 
 .heading {
@@ -47,6 +55,11 @@ a:visited {
 
 .subheading {
   &--feature { font-size: 1.25rem; }
+
+  &--secondary {
+    font-size: 1.25rem;
+    letter-spacing: 0.02rem;
+  }
 }
 
 .paragraph {

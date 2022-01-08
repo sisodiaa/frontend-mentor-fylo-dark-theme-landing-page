@@ -134,10 +134,22 @@ nav {
   font-size: 0.875rem;
 }
 
+a,
 a:link,
 a:visited {
   text-decoration: none;
   color: currentColor;
+}
+a.link--benefit,
+a:link.link--benefit,
+a:visited.link--benefit {
+  font-size: 0.875rem;
+  color: var(--color-accent-cyan);
+}
+a.link--benefit span,
+a:link.link--benefit span,
+a:visited.link--benefit span {
+  opacity: 0.75;
 }
 
 .heading--hero {
@@ -146,6 +158,10 @@ a:visited {
 
 .subheading--feature {
   font-size: 1.25rem;
+}
+.subheading--secondary {
+  font-size: 1.25rem;
+  letter-spacing: 0.02rem;
 }
 
 .paragraph--hero {
@@ -210,6 +226,11 @@ nav ul {
 .subheading--feature {
   margin-bottom: 0.5rem;
 }
+.subheading--secondary {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  margin-bottom: 1rem;
+}
 
 .paragraph--hero {
   margin-bottom: 2.15rem;
@@ -218,6 +239,11 @@ nav ul {
   opacity: 0.75;
 }
 .paragraph--feature {
+  opacity: 0.75;
+}
+.paragraph--secondary {
+  padding-left: 0.9rem;
+  margin-bottom: 1rem;
   opacity: 0.75;
 }
 
@@ -233,16 +259,44 @@ nav ul {
   background-image: linear-gradient(151deg, var(--color-accent-cyan), var(--color-accent-blue) 95%);
 }
 
+.link--benefit {
+  display: block;
+  width: fit-content;
+  padding-bottom: 0.25rem;
+  margin-left: 0.9rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid currentColor;
+}
+.link--benefit::after {
+  display: inline-block;
+  content: "";
+  background-image: url(../images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 16px;
+  height: 16px;
+  margin-left: 0.3rem;
+  vertical-align: text-bottom;
+}
+
+.page__illustration {
+  padding-left: 1.2rem;
+  padding-right: 0.714285rem;
+}
 .page__illustration--hero {
   margin-bottom: 2.5rem;
   padding-left: 1.2rem;
   padding-right: 0.714285rem;
+}
+.page__illustration--secondary {
+  margin-bottom: 3.25rem;
 }
 .page__features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   margin-top: 9.5rem;
   grid-row-gap: 6.75rem;
+  margin-bottom: 11.25rem;
 }
 .page__feature {
   width: 96%;
@@ -269,6 +323,10 @@ nav ul {
 .page__icon--any-file {
   height: 3.5rem;
   margin-bottom: 2.75rem;
+}
+.page__secondary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
 }
 
 .attribution {
