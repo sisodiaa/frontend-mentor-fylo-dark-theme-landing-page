@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .page {
   &__illustration {
     padding-left: 1.2rem;
@@ -55,7 +57,37 @@
 
   &__secondary {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  &__testimonials {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+    grid-row-gap: 1.75rem;
+    padding-left: 2.125rem;
+    padding-right: 1.625rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -18px;
+      left: 2.525rem;
+      width: 55px;
+      height: 45px;
+      background-image: url(../images/bg-quotes.png);
+      background-repeat: no-repeat;
+      background-size: 40% 40%;
+    }
+  }
+
+  &__testimonial {
+    padding: 1.5rem 1.5rem;
+    background-color: var(--color-background-testimonials);
+    border-radius: 0.125rem;
+    overflow: hidden;
   }
 }
 

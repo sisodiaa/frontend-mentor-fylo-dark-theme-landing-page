@@ -42,7 +42,7 @@ a:visited {
   color: currentColor;
 
   &.link--benefit {
-    font-size: 0.875rem;
+    font-size: 0.825rem;
     color: var(--color-accent-cyan);
 
     & span { opacity: 0.75; }
@@ -64,10 +64,31 @@ a:visited {
 
 .paragraph {
   &--hero { text-align: center; }
+
+  &--testimonial {
+    font-size: 0.7rem;
+    line-height: 1.8;
+    opacity: 0.75;
+  }
 }
 
 .button {
   &--hero { text-align: center; }
+}
+
+.profile {
+  & strong {
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.9;
+    letter-spacing: 0.05rem;
+  }
+
+  & small {
+    font-size: 0.5rem;
+    letter-spacing: 0.05rem;
+    opacity: 0.75;
+  }
 }
 
 .page__feature { text-align: center; }
