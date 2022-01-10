@@ -26,10 +26,7 @@ h2 {
 
 h1 { font-size: 1.725rem; }
 
-nav,
-input[type="submit"] {
-  font-weight: 400;
-}
+nav { font-weight: 400; }
 
 p { font-size: 1rem; }
 
@@ -54,10 +51,10 @@ a:visited {
 }
 
 .subheading {
-  &--feature { font-size: 1.25rem; }
+  font-size: 1.25rem;
 
-  &--secondary {
-    font-size: 1.25rem;
+  &--secondary,
+  &--cta {
     letter-spacing: 0.02rem;
   }
 }
@@ -73,6 +70,10 @@ a:visited {
 }
 
 .button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: currentColor;
+
   &--hero { text-align: center; }
 }
 
@@ -92,3 +93,4 @@ a:visited {
 }
 
 .page__feature { text-align: center; }
+.page__cta { text-align: center; }

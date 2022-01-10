@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  & div:first-child { margin-bottom: 1.5rem; }
+
+  & input { width: 100%; }
+
+  & input[type="email"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    border: none;
+
+    &::-webkit-input-placeholder {
+      font-size: 0.75rem;
+      opacity: 0.5;
+    }
+  }
+}

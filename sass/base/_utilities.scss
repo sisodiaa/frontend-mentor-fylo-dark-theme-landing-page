@@ -5,7 +5,9 @@
 }
 
 #region {
-  &-header { background-color: var(--color-background-intro); }
+  &-header {
+    background-color: var(--color-background-intro);
+  }
 
   &-intro {
     background-image: url(../images/bg-curvy-mobile.svg),
@@ -18,6 +20,15 @@
     background-position: bottom 15.75rem center, 0px 0px;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 141px, cover;
+  }
+
+  &-cta {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-background-main),
+      var(--color-background-main) 50%,
+      var(--color-background-footer) 50%
+    );
   }
 }
 

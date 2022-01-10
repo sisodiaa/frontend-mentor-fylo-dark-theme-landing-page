@@ -89,6 +89,14 @@
     border-radius: 0.125rem;
     overflow: hidden;
   }
+
+  &__cta {
+    margin-bottom: 5.25rem;
+    padding: 3rem 1.75rem 2.5rem;
+    background-color: var(--color-background-cta);
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 19px -10px #000;
+  }
 }
 
 .attribution {
