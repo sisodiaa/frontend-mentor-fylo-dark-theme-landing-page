@@ -7,8 +7,6 @@
 
     &--hero {
       margin-bottom: 2.5rem;
-      padding-left: 1.2rem;
-      padding-right: 0.714285rem;
     }
 
     &--secondary {
@@ -91,11 +89,70 @@
   }
 
   &__cta {
-    margin-bottom: 5.25rem;
     padding: 3rem 1.75rem 2.5rem;
     background-color: var(--color-background-cta);
     border-radius: 0.25rem;
     box-shadow: 0 1px 19px -10px #000;
+  }
+
+  &-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.25rem;
+    margin-bottom: 5.75rem;
+
+    & > * {
+      display: grid;
+      grid-template-columns: 2.25rem 1fr;
+      grid-column-gap: 1.25rem;
+
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        grid-column: 1 / span 1;
+        justify-self: center;
+      }
+    }
+
+    & span {
+      opacity: 0.75;
+    }
+  }
+
+  &-address::before {
+    margin-top: 0.5rem;
+    width: 13px;
+    height: 18px;
+    background-image: url(../images/icon-location.svg);
+    background-size: 100% 100%
+  }
+
+  &-phone::before {
+    margin-top: 0.3rem;
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/icon-phone.svg);
+    background-size: 100% 100%
+  }
+
+  &-email::before {
+    margin-top: 0.3rem;
+    width: 20px;
+    height: 16px;
+    background-image: url(../images/icon-email.svg);
+    background-size: 100% 100%
+  }
+
+  &-links {
+    margin-left: 0.5rem;
+    opacity: 0.75;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+
+    &--1 { margin-bottom: 3.4rem; }
+    &--2 { margin-bottom: 5.5rem; }
   }
 }
 

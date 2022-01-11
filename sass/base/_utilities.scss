@@ -30,6 +30,8 @@
       var(--color-background-footer) 50%
     );
   }
+
+  &-footer { background-color: var(--color-background-footer); }
 }
 
 .container {
