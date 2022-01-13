@@ -21,6 +21,14 @@
     background-position: bottom 15.75rem center, 0px 0px;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 141px, cover;
+
+    @include respond-to-desktop {
+      background-image: url(../images/bg-curvy-desktop.svg);
+      background-color: var(--color-background-intro);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 100% 449px;
+    }
   }
 
   &-cta {

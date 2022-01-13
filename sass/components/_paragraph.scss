@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .paragraph {
   &--hero {
     margin-bottom: 2.15rem;
@@ -19,5 +21,15 @@
   &--cta {
     margin-bottom: 2rem;
     opacity: 0.75;
+  }
+
+  @include respond-to-desktop {
+    &--hero {
+      width: 49%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
   }
 }

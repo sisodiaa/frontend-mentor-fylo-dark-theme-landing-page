@@ -209,8 +209,20 @@ a:visited.link--benefit span {
 }
 
 @media only screen and (min-width: 41.375em) {
+  h1 {
+    font-size: 2.875rem;
+  }
+
+  p {
+    font-size: 1.435rem;
+  }
+
   nav {
     font-size: 1.125rem;
+  }
+
+  a {
+    font-size: 1.15rem;
   }
 }
 .region {
@@ -225,6 +237,15 @@ a:visited.link--benefit span {
   background-position: bottom 15.75rem center, 0px 0px;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 141px, cover;
+}
+@media only screen and (min-width: 41.375em) {
+  #region-intro {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-color: var(--color-background-intro);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 449px;
+  }
 }
 #region-cta {
   background-image: linear-gradient(to bottom, var(--color-background-main), var(--color-background-main) 50%, var(--color-background-footer) 50%);
@@ -296,6 +317,16 @@ footer {
   padding-left: 1.2rem;
   padding-right: 0.714285rem;
 }
+@media only screen and (min-width: 41.375em) {
+  .heading--hero {
+    width: 66%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.375rem;
+  }
+}
 
 .subheading--feature {
   margin-bottom: 0.5rem;
@@ -330,6 +361,15 @@ footer {
   margin-bottom: 2rem;
   opacity: 0.75;
 }
+@media only screen and (min-width: 41.375em) {
+  .paragraph--hero {
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
 
 .button {
   display: block;
@@ -346,6 +386,16 @@ footer {
 }
 .button--cta {
   border: none;
+}
+@media only screen and (min-width: 41.375em) {
+  .button {
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+  }
+  .button--hero {
+    width: 22%;
+    min-width: 20rem;
+  }
 }
 
 .link--benefit {
@@ -434,6 +484,11 @@ footer {
   fill: var(--color-neutral-white);
 }
 
+@media only screen and (min-width: 41.375em) {
+  .page__hero {
+    padding-bottom: 13.5rem;
+  }
+}
 .page__illustration {
   padding-left: 1.2rem;
   padding-right: 0.714285rem;
@@ -444,12 +499,25 @@ footer {
 .page__illustration--secondary {
   margin-bottom: 3.25rem;
 }
+@media only screen and (min-width: 41.375em) {
+  .page__illustration {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .page__features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   margin-top: 9.5rem;
   grid-row-gap: 6.75rem;
   margin-bottom: 11.25rem;
+}
+@media only screen and (min-width: 41.375em) {
+  .page__features {
+    margin-top: 0rem;
+  }
 }
 .page__feature {
   width: 96%;

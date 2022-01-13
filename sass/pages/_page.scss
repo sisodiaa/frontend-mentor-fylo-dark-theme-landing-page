@@ -1,6 +1,11 @@
+@use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
 .page {
+  &__hero {
+    @include respond-to-desktop { padding-bottom: 13.5rem; }
+  }
+
   &__illustration {
     padding-left: 1.2rem;
     padding-right: 0.714285rem;
@@ -12,6 +17,13 @@
     &--secondary {
       margin-bottom: 3.25rem;
     }
+
+    @include respond-to-desktop {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__features {
@@ -20,6 +32,8 @@
     margin-top: 9.5rem;
     grid-row-gap: 6.75rem;
     margin-bottom: 11.25rem;
+
+    @include respond-to-desktop { margin-top: 0rem }
   }
 
   &__feature {
