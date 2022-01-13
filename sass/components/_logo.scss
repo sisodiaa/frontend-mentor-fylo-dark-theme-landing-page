@@ -1,7 +1,13 @@
+@use "../abstracts/mixins" as *;
+
 .logo {
   &--header {
     width: 5.71428rem;
     height: auto;
+
+    @include respond-to-desktop {
+      width: initial;
+    }
   }
 
   &--footer {

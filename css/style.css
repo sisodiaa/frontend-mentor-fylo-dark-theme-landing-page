@@ -208,6 +208,11 @@ a:visited.link--benefit span {
   font-size: 1.125rem;
 }
 
+@media only screen and (min-width: 41.375em) {
+  nav {
+    font-size: 1.125rem;
+  }
+}
 .region {
   width: 100%;
 }
@@ -233,6 +238,13 @@ a:visited.link--benefit span {
   margin-left: 5.0667%;
   margin-right: 6.6666%;
 }
+@media only screen and (min-width: 41.375em) {
+  .container {
+    width: 88.8777%;
+    margin-left: 5.5667%;
+    margin-right: 5.5556%;
+  }
+}
 
 header {
   display: flex;
@@ -240,6 +252,12 @@ header {
   align-items: center;
   padding-bottom: 3.375rem;
   padding-top: 1.7857rem;
+}
+@media only screen and (min-width: 41.375em) {
+  header {
+    padding-top: 5.2rem;
+    padding-bottom: 5.375rem;
+  }
 }
 
 nav {
@@ -249,6 +267,11 @@ nav ul {
   display: flex;
   column-gap: 1.7857rem;
 }
+@media only screen and (min-width: 41.375em) {
+  nav ul {
+    column-gap: 4.25rem;
+  }
+}
 
 footer {
   padding-top: 5.25rem;
@@ -257,6 +280,11 @@ footer {
 .logo--header {
   width: 5.71428rem;
   height: auto;
+}
+@media only screen and (min-width: 41.375em) {
+  .logo--header {
+    width: initial;
+  }
 }
 .logo--footer {
   margin-left: 1.4rem;

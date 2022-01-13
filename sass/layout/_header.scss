@@ -1,7 +1,14 @@
+@use "../abstracts/mixins" as *;
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 3.375rem;
   padding-top: 1.7857rem;
+
+  @include respond-to-desktop {
+    padding-top: 5.2rem;
+    padding-bottom: 5.375rem;
+  }
 }
