@@ -224,6 +224,14 @@ a:visited.link--benefit span {
   a {
     font-size: 1.15rem;
   }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+
+  .paragraph--feature {
+    font-size: 1.05rem;
+  }
 }
 .region {
   width: 100%;
@@ -516,7 +524,11 @@ footer {
 }
 @media only screen and (min-width: 41.375em) {
   .page__features {
+    width: 75%;
     margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 6.5%;
   }
 }
 .page__feature {
@@ -525,6 +537,17 @@ footer {
 }
 .page__feature:first-child {
   margin-bottom: -0.5rem;
+}
+@media only screen and (min-width: 41.375em) {
+  .page__feature {
+    width: 89%;
+  }
+  .page__feature:first-child, .page__feature:last-child {
+    width: 81%;
+  }
+  .page__feature:first-child {
+    margin-bottom: 0rem;
+  }
 }
 .page__icon {
   margin: 0 auto;
@@ -544,6 +567,26 @@ footer {
 .page__icon--any-file {
   height: 3.5rem;
   margin-bottom: 2.75rem;
+}
+@media only screen and (min-width: 41.375em) {
+  .page__icon--access-anywhere {
+    margin-top: 0.25rem;
+    height: 5.5rem;
+    margin-bottom: 2rem;
+  }
+  .page__icon--security {
+    height: 6.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .page__icon--collaboration {
+    height: 5.05rem;
+    margin-bottom: 2.2rem;
+  }
+  .page__icon--any-file {
+    margin-top: 0.25rem;
+    height: 4.52rem;
+    margin-bottom: 2.48rem;
+  }
 }
 .page__secondary {
   display: grid;

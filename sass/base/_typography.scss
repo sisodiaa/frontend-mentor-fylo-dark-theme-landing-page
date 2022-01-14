@@ -106,4 +106,10 @@ a:visited {
   nav { font-size: 1.125rem; }
 
   a { font-size: 1.15rem; }
+
+  .subheading { font-size: 1.4rem; }
+  
+  .paragraph {
+    &--feature { font-size: 1.05rem; }
+  }
 }

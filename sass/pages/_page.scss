@@ -33,7 +33,13 @@
     grid-row-gap: 6.75rem;
     margin-bottom: 11.25rem;
 
-    @include respond-to-desktop { margin-top: 0rem }
+    @include respond-to-desktop {
+      width: 75%;
+      margin-top: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column-gap: 6.5%;
+    }
   }
 
   &__feature {
@@ -41,6 +47,14 @@
     margin: 0 auto;
 
     &:first-child { margin-bottom: -0.5rem; }
+
+    @include respond-to-desktop {
+      width: 89%;
+
+      &:first-child, &:last-child { width: 81%; }
+
+      &:first-child { margin-bottom: 0rem; }
+    }
   }
 
   &__icon {
@@ -64,6 +78,30 @@
     &--any-file {
       height: 3.5rem;
       margin-bottom: 2.75rem;
+    }
+
+    @include respond-to-desktop {
+      &--access-anywhere {
+        margin-top: 0.25rem;
+        height: 5.5rem;
+        margin-bottom: 2.00rem;
+      }
+
+      &--security {
+        height: 6.25rem;
+        margin-bottom: 1.5rem; // 1.465rem;
+      }
+
+      &--collaboration {
+        height: 5.05rem;
+        margin-bottom: 2.2rem;
+      }
+
+      &--any-file {
+        margin-top: 0.25rem;
+        height: 4.52rem;
+        margin-bottom: 2.48rem;
+      }
     }
   }
 
