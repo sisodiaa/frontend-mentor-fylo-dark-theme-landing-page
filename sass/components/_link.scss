@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .link--benefit {
   display: block;
   width: fit-content;
@@ -17,4 +19,6 @@
     margin-left: 0.3rem;
     vertical-align: text-bottom;
   }
+
+  @include respond-to-desktop { padding-top: 0.75rem; }
 }

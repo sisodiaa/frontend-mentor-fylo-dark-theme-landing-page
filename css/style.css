@@ -150,6 +150,13 @@ a:link.link--benefit span,
 a:visited.link--benefit span {
   opacity: 0.75;
 }
+@media only screen and (min-width: 41.375em) {
+  a.link--benefit,
+a:link.link--benefit,
+a:visited.link--benefit {
+    font-size: 1.15rem;
+  }
+}
 
 .heading--hero {
   text-align: center;
@@ -228,9 +235,16 @@ a:visited.link--benefit span {
   .subheading {
     font-size: 1.4rem;
   }
+  .subheading--secondary {
+    font-size: 2.875rem;
+    line-height: 1.25;
+  }
 
   .paragraph--feature {
     font-size: 1.05rem;
+  }
+  .paragraph--secondary {
+    font-size: 1.15rem;
   }
 }
 .region {
@@ -275,6 +289,13 @@ a:visited.link--benefit span {
   }
 }
 
+@media only screen and (min-width: 41.375em) {
+  .half {
+    margin-top: 1.5rem;
+    margin-left: 3.25rem;
+    align-self: center;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -343,6 +364,12 @@ footer {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 41.375em) {
+  .subheading--secondary {
+    width: 90%;
+    margin-bottom: 1.25rem;
+  }
 }
 .subheading--cta {
   margin-bottom: 1rem;
@@ -424,6 +451,11 @@ footer {
   height: 16px;
   margin-left: 0.3rem;
   vertical-align: text-bottom;
+}
+@media only screen and (min-width: 41.375em) {
+  .link--benefit {
+    padding-top: 0.75rem;
+  }
 }
 
 .profile {
@@ -525,9 +557,7 @@ footer {
 @media only screen and (min-width: 41.375em) {
   .page__features {
     width: 75%;
-    margin-top: 0rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0rem auto 9.5rem;
     grid-column-gap: 6.5%;
   }
 }
@@ -591,6 +621,13 @@ footer {
 .page__secondary {
   display: grid;
   grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 41.375em) {
+  .page__secondary {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2.3rem;
+  }
 }
 .page__testimonials {
   position: relative;
