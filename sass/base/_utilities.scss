@@ -38,6 +38,15 @@
       var(--color-background-main) 50%,
       var(--color-background-footer) 50%
     );
+
+    @include respond-to-desktop {
+      background-image: linear-gradient(
+        to bottom,
+        var(--color-background-main),
+        var(--color-background-main) 58%,
+        var(--color-background-footer) 58%
+      );
+    }
   }
 
   &-footer { background-color: var(--color-background-footer); }
@@ -55,8 +64,8 @@
   }
 }
 
-@include respond-to-desktop {
-  .half {
+.half {
+  @include respond-to-desktop {
     margin-top: 1.5rem;
     margin-left: 3.25rem;
     align-self: center;

@@ -14,5 +14,11 @@
     }
   }
 
-  &--cta { margin-bottom: 1rem; }
+  &--cta {
+    margin-bottom: 1rem;
+
+    @include respond-to-desktop {
+      margin-bottom: 1.15rem;
+    }
+  }
 }

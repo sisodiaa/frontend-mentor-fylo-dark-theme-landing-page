@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .form {
   display: flex;
   flex-direction: column;
@@ -16,6 +18,27 @@
     &::-webkit-input-placeholder {
       font-size: 0.75rem;
       opacity: 0.5;
+    }
+  }
+
+  @include respond-to-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2rem;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & div:first-child {
+      flex-grow: 4;
+      margin-bottom: 0rem;
+    }
+
+    & div:last-child { flex-grow: 1; }
+
+    & .button--cta {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }

@@ -175,6 +175,15 @@
     background-color: var(--color-background-cta);
     border-radius: 0.25rem;
     box-shadow: 0 1px 19px -10px #000;
+
+    @include respond-to-desktop {
+      width: 67.5%;
+      max-width: 61.725em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2.875rem;
+      box-shadow: 3px 3px 11px -5px #000;
+    }
   }
 
   &-meta {
