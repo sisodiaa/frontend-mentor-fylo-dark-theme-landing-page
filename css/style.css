@@ -305,6 +305,8 @@ header {
 }
 @media only screen and (min-width: 41.375em) {
   header {
+    max-width: 91.3817em;
+    margin: 0 auto;
     padding-top: 5.2rem;
     padding-bottom: 5.375rem;
   }
@@ -526,7 +528,9 @@ footer {
 
 @media only screen and (min-width: 41.375em) {
   .page__hero {
-    padding-bottom: 13.5rem;
+    max-width: 80em;
+    margin: 0 auto;
+    padding-bottom: 12.15rem;
   }
 }
 .page__illustration {
@@ -557,6 +561,7 @@ footer {
 @media only screen and (min-width: 41.375em) {
   .page__features {
     width: 75%;
+    max-width: 69em;
     margin: 0rem auto 9.5rem;
     grid-column-gap: 6.5%;
   }
@@ -625,6 +630,8 @@ footer {
 @media only screen and (min-width: 41.375em) {
   .page__secondary {
     grid-template-columns: 1fr 1fr;
+    max-width: 92em;
+    margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2.3rem;
   }

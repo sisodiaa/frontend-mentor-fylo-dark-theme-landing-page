@@ -3,7 +3,11 @@
 
 .page {
   &__hero {
-    @include respond-to-desktop { padding-bottom: 13.5rem; }
+    @include respond-to-desktop {
+      max-width: 80em;
+      margin: 0 auto;
+      padding-bottom: 12.15rem;
+    }
   }
 
   &__illustration {
@@ -35,6 +39,7 @@
 
     @include respond-to-desktop {
       width: 75%;
+      max-width: 69em;
       margin: 0rem auto 9.5rem;
       grid-column-gap: 6.5%;
     }
@@ -109,6 +114,8 @@
 
     @include respond-to-desktop {
       grid-template-columns: 1fr 1fr;
+      max-width: 92em;
+      margin: 0 auto;
       padding-left: 2rem;
       padding-right: 2.3rem;
     }
