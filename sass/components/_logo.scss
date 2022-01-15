@@ -13,5 +13,9 @@
   &--footer {
     margin-left: 1.4rem;
     margin-bottom: 2.75rem;
+
+    @include respond-to-desktop {
+      margin-bottom: 2.3rem;
+    }
   }
 }

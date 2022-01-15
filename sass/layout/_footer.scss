@@ -1,3 +1,13 @@
+@use "../abstracts/mixins" as *;
+
 footer {
-    padding-top: 5.25rem;
+  padding-top: 5.25rem;
+
+  @include respond-to-desktop {
+    max-width: 92em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-left: 1.5rem;
+  }
 }

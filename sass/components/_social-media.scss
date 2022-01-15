@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
 .social-media {
@@ -7,6 +8,12 @@
     align-items: center;
     column-gap: 0.85rem;
     padding-bottom: 3rem;
+
+    @include respond-to-desktop {
+      flex: 2;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
   }
 
   &-icon-box {
