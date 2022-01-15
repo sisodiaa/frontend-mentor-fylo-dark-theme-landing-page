@@ -246,6 +246,11 @@ a:visited.link--benefit {
   .paragraph--secondary {
     font-size: 1.15rem;
   }
+  .paragraph--testimonial {
+    font-size: 0.975rem;
+    line-height: 1.55;
+    letter-spacing: 0.0475rem;
+  }
 }
 .region {
   width: 100%;
@@ -405,6 +410,9 @@ footer {
     margin-right: auto;
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+  .paragraph--testimonial {
+    margin-bottom: 1.75rem;
   }
 }
 
@@ -639,7 +647,7 @@ footer {
 .page__testimonials {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   margin-top: 11rem;
   margin-bottom: 11rem;
   grid-row-gap: 1.75rem;
@@ -657,11 +665,31 @@ footer {
   background-repeat: no-repeat;
   background-size: 40% 40%;
 }
+@media only screen and (min-width: 41.375em) {
+  .page__testimonials {
+    grid-column-gap: 3rem;
+    max-width: 92em;
+    margin: 9.5rem auto 14.25rem;
+    padding-left: 4.35rem;
+    padding-right: 4.2rem;
+  }
+  .page__testimonials::before {
+    top: -2.5rem;
+    left: 3.75rem;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+}
 .page__testimonial {
   padding: 1.5rem 1.5rem;
   background-color: var(--color-background-testimonials);
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   overflow: hidden;
+}
+@media only screen and (min-width: 41.375em) {
+  .page__testimonial {
+    padding: 2.9rem 1.75rem 1.89rem;
+  }
 }
 .page__cta {
   padding: 3rem 1.75rem 2.5rem;

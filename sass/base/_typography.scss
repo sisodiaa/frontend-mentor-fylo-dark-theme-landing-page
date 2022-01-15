@@ -121,5 +121,11 @@ a:visited {
   .paragraph {
     &--feature { font-size: 1.05rem; }
     &--secondary { font-size: 1.15rem; }
+
+    &--testimonial {
+      font-size: 0.975rem; 
+      line-height: 1.55;
+      letter-spacing: 0.0475rem;
+    }
   }
 }

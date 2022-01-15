@@ -124,7 +124,7 @@
   &__testimonials {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     margin-top: 11rem;
     margin-bottom: 11rem;
     grid-row-gap: 1.75rem;
@@ -142,13 +142,32 @@
       background-repeat: no-repeat;
       background-size: 40% 40%;
     }
+
+    @include respond-to-desktop {
+      grid-column-gap: 3rem;
+      max-width: 92em;
+      margin: 9.5rem auto 14.25rem;
+      padding-left: 4.35rem;
+      padding-right: 4.2rem;
+
+      &::before {
+        top: -2.5rem;
+        left: 3.75rem;
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+    }
   }
 
   &__testimonial {
     padding: 1.5rem 1.5rem;
     background-color: var(--color-background-testimonials);
-    border-radius: 0.125rem;
+    border-radius: 0.25rem;
     overflow: hidden;
+
+    @include respond-to-desktop {
+      padding: 2.9rem 1.75rem 1.89rem;
+    }
   }
 
   &__cta {
