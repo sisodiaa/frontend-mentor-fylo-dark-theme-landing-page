@@ -42,8 +42,15 @@ a:visited {
   &.link--benefit {
     font-size: 0.825rem;
     color: var(--color-accent-cyan);
+    transition: all 0.3s;
 
     & span { opacity: 0.75; }
+
+    &:hover {
+      color: var(--color-neutral-white);
+
+      & span { opacity: 1; }
+    }
 
     @include respond-to-desktop { font-size: 1.15rem; }
   }
@@ -95,10 +102,27 @@ a:visited {
   }
 }
 
+.form {
+  & small {
+    color: var(--color-accent-light-red);
+  }
+}
+
 .page__feature { text-align: center; }
 .page__cta { text-align: center; }
 .page-address { font-size: 1.15rem; }
 .page-links { font-size: 1.125rem; }
+
+.nav-link {
+  opacity: 0.75;
+  transition: all 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 1;
+    font-weight: 700;
+  }
+}
 
 @include respond-to-desktop {
   h1 { font-size: 2.875rem; }

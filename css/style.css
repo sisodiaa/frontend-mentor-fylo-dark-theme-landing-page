@@ -144,11 +144,22 @@ a:link.link--benefit,
 a:visited.link--benefit {
   font-size: 0.825rem;
   color: var(--color-accent-cyan);
+  transition: all 0.3s;
 }
 a.link--benefit span,
 a:link.link--benefit span,
 a:visited.link--benefit span {
   opacity: 0.75;
+}
+a.link--benefit:hover,
+a:link.link--benefit:hover,
+a:visited.link--benefit:hover {
+  color: var(--color-neutral-white);
+}
+a.link--benefit:hover span,
+a:link.link--benefit:hover span,
+a:visited.link--benefit:hover span {
+  opacity: 1;
 }
 @media only screen and (min-width: 41.375em) {
   a.link--benefit,
@@ -199,6 +210,10 @@ a:visited.link--benefit {
   opacity: 0.75;
 }
 
+.form small {
+  color: var(--color-accent-light-red);
+}
+
 .page__feature {
   text-align: center;
 }
@@ -213,6 +228,16 @@ a:visited.link--benefit {
 
 .page-links {
   font-size: 1.125rem;
+}
+
+.nav-link {
+  opacity: 0.75;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 41.375em) {
@@ -329,9 +354,6 @@ header {
   }
 }
 
-nav {
-  opacity: 0.75;
-}
 nav ul {
   display: flex;
   column-gap: 1.7857rem;
@@ -457,6 +479,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 2rem;
+  transition: all 0.3s;
 }
 .button--gradient {
   margin: 0 auto;
@@ -467,6 +490,9 @@ footer {
 }
 .button--cta {
   border: none;
+}
+.button:hover {
+  filter: brightness(115%);
 }
 @media only screen and (min-width: 41.375em) {
   .button {
@@ -497,6 +523,9 @@ footer {
   height: 16px;
   margin-left: 0.3rem;
   vertical-align: text-bottom;
+}
+.link--benefit:hover::after {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(200%) contrast(100%);
 }
 @media only screen and (min-width: 41.375em) {
   .link--benefit {
@@ -548,6 +577,15 @@ footer {
   font-size: 0.75rem;
   opacity: 0.5;
 }
+.form small {
+  display: none;
+  text-align: left;
+  margin-top: 0.35rem;
+  margin-left: 2rem;
+}
+.form input[type=email]:invalid + small {
+  display: block;
+}
 @media only screen and (min-width: 41.375em) {
   .form {
     flex-direction: row;
@@ -589,6 +627,13 @@ footer {
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.social-media-icon-box:hover {
+  border-color: var(--color-accent-cyan);
+}
+.social-media-icon-box:hover > .social-media-icon {
+  fill: var(--color-accent-cyan);
 }
 .social-media-icon {
   display: block;

@@ -6,6 +6,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 2rem;
+  transition: all 0.3s;
 
   &--gradient {
     margin: 0 auto;
@@ -19,6 +20,8 @@
   &--hero { width: 72.5%; }
 
   &--cta { border: none; }
+
+  &:hover { filter: brightness(115%); }
 
   @include respond-to-desktop {
     padding-top: 1.15rem;

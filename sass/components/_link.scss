@@ -20,5 +20,9 @@
     vertical-align: text-bottom;
   }
 
+  &:hover::after {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(200%) contrast(100%);
+  }
+
   @include respond-to-desktop { padding-top: 0.75rem; }
 }

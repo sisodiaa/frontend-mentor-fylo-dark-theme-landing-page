@@ -21,6 +21,13 @@
     border-radius: 50%;
     padding: 0.5rem;
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: var(--color-accent-cyan);
+
+      &> .social-media-icon { fill: var(--color-accent-cyan); }
+    }
   }
 
   &-icon {

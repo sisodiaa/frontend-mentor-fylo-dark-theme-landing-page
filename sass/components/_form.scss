@@ -21,6 +21,15 @@
     }
   }
 
+  & small {
+    display: none;
+    text-align: left;
+    margin-top: 0.35rem;
+    margin-left: 2rem;
+  }
+
+  & input[type="email"]:invalid + small { display: block; }
+
   @include respond-to-desktop {
     flex-direction: row;
     justify-content: space-between;
